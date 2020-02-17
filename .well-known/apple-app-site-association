@@ -1,0 +1,29 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "CB25TE7HF4.com.murali.test.applinks" ],
+             "components": [
+               {
+                  "#": "test",
+                  "comment": "Matches any URL whose fragment equals redirect"
+               },
+               {
+                  "/": "/test_center.aspx",
+                  "exclude": true,
+                  "comment": "Matches any URL whose path starts with /profile_center.aspx and instructs the system not to open it as a universal link"
+               },
+                {
+                  "/": "/test_center.aspx*",
+                  "exclude": true,
+                  "comment": "Matches any URL whose path starts with /profile_center.aspx and instructs the system not to open it as a universal link"
+               },
+               {
+                  "/": "/test_center.aspx/test",
+                  "comment": "Matches any URL whose path starts with /profile_center.aspx and instructs the system not to open it as a universal link"
+               }
+             ]
+           }
+       ]
+   }
+}
